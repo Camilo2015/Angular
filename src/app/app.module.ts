@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import {
-  MatButtonModule,
   MatMenuModule,
   MatToolbarModule,
   MatIconModule,
@@ -11,7 +11,9 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatTooltipModule, 
-  MatListModule, 
+  MatCheckboxModule, 
+  MatButtonModule,
+  MatButtonToggleModule,
   MatGridListModule } from '@angular/material'; 
 import { FlexLayoutModule } from '@angular/flex-layout'; 
 import { AppComponent } from './app.component';
@@ -27,7 +29,7 @@ import { MenuComponent } from './menu/menu.component';
     BrowserModule, 
     BrowserAnimationsModule,
     FlexLayoutModule, 
-    MatButtonModule,
+    FormsModule, 
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
@@ -35,8 +37,10 @@ import { MenuComponent } from './menu/menu.component';
     MatSidenavModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTooltipModule, 
-    MatListModule, 
+    MatTooltipModule,
+    MatButtonModule,
+    MatButtonToggleModule, 
+    MatCheckboxModule,
     MatGridListModule
     
   ],
