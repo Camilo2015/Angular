@@ -10,6 +10,7 @@ import {
   MatSidenavModule,
   MatFormFieldModule,
   MatInputModule,
+  MatListModule, 
   MatTooltipModule, 
   MatCheckboxModule, 
   MatButtonModule,
@@ -19,11 +20,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import  'hammerjs';
 import { MenuComponent } from './menu/menu.component';
+import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DishdetailComponent
   ],
   imports: [
     BrowserModule, 
@@ -34,6 +37,7 @@ import { MenuComponent } from './menu/menu.component';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
+    MatListModule, 
     MatSidenavModule,
     MatFormFieldModule,
     MatInputModule,
