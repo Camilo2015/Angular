@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'; 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+
 import {
   MatMenuModule,
   MatToolbarModule,
@@ -21,12 +22,13 @@ import { AppComponent } from './app.component';
 import  'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { DishService } from './services/dish.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DishdetailComponent
+    DishdetailComponent, 
   ],
   imports: [
     BrowserModule, 
@@ -48,7 +50,7 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
     MatGridListModule
     
   ],
-  providers: [],
+  providers: [ DishService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
